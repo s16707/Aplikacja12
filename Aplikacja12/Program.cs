@@ -7,7 +7,7 @@ namespace Aplikacja12
         static void Main(string[] args)
         {
             Console.WriteLine("Modyfikacja1"); 
-            Console.WriteLine("To jest drugi commit");
+            Console.WriteLine("Modyfikacja2");
             Console.WriteLine("Trzeci commit");
         }
     }
