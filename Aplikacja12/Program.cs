@@ -8,7 +8,7 @@ namespace Aplikacja12
         {
             Console.WriteLine("Modyfikacja1"); 
             Console.WriteLine("Modyfikacja2");
-            Console.WriteLine("Trzeci commit");
+            Console.WriteLine("Modyfikacja3");
         }
     }
 }
