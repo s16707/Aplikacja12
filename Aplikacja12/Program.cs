@@ -17,8 +17,8 @@ namespace Aplikacja12
                 suma += liczba;
             }
 
-            double srednia = (double)suma / tablica.Length;
-            return srednia;
+            double sredniaNowa = (double)suma / tablica.Length;
+            return sredniaNowa;
         }
 
     }
@@ -28,8 +28,8 @@ namespace Aplikacja12
         static void Main(string[] args)
         {
             int[] tablicaLiczb = { 1, 2, 3, 4, 5 };
-            double srednia = MathHelper.ObliczSrednia(tablicaLiczb);
-            Console.WriteLine("Średnia: " + srednia);
+            double sredniaNowa = MathHelper.ObliczSrednia(tablicaLiczb);
+            Console.WriteLine("Średnia: " + sredniaNowa);
         }
     }
 
