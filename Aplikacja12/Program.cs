@@ -1,32 +1,38 @@
 ﻿using System;
 
 namespace Aplikacja12
-public class MathHelper
 {
-    public static double ObliczSrednia(int[] tablica)
+    public class MathHelper
     {
-        if (tablica == null || tablica.Length == 0)
+        public static double ObliczSrednia(int[] tablica)
         {
-            throw new ArgumentException("Tablica jest pusta lub niepoprawna.");
+            if (tablica == null || tablica.Length == 0)
+            {
+                throw new ArgumentException("Tablica jest pusta lub niepoprawna.");
+            }
+
+            int suma = 0;
+            foreach (int liczba in tablica)
+            {
+                suma += liczba;
+            }
+
+            double srednia = (double)suma / tablica.Length;
+            return srednia;
         }
 
-        int suma = 0;
-        foreach (int liczba in tablica)
-        {
-            suma += liczba;
-        }
-
-        double srednia = (double)suma / tablica.Length;
-        return srednia;
     }
-}
 
-class Program
-{
-    static void Main(string[] args)
+    class Program
     {
-        int[] tablicaLiczb = { 1, 2, 3, 4, 5 };
-        double srednia = MathHelper.ObliczSrednia(tablicaLiczb);
-        Console.WriteLine("Średnia: " + srednia);
+        static void Main(string[] args)
+        {
+            int[] tablicaLiczb = { 1, 2, 3, 4, 5 };
+            double srednia = MathHelper.ObliczSrednia(tablicaLiczb);
+            Console.WriteLine("Średnia: " + srednia);
+        }
     }
+
+
+
 }
