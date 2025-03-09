@@ -8,6 +8,7 @@ namespace Aplikacja12
         {
             Console.WriteLine("Hello World!"); 
             Console.WriteLine("To jest drugi commit");
+            Console.WriteLine("Trzeci commit");
         }
     }
 }
